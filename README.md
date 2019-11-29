@@ -1,5 +1,7 @@
 # Fawkes
 
+[![Build Status](https://travis-ci.com/folkengine/fawkes.svg?branch=master)](https://travis-ci.com/folkengine/fawkes)
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
