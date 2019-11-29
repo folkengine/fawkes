@@ -64,7 +64,8 @@ defmodule Fawkes.MixProject do
     [
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
-      test: ["ecto.create --quiet", "ecto.migrate", "test"]
+      test: ["ecto.create --quiet", "ecto.migrate", "test"],
+      jsrun: ["cmd cd assets && npm install && npm run deploy"]
     ]
   end
 end
