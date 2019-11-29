@@ -49,6 +49,7 @@ defmodule Fawkes.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
+      {:distillery, "~> 2.1"},
       {:excoveralls, "~> 0.12.1", only: [:test, :dev]}
     ]
   end
