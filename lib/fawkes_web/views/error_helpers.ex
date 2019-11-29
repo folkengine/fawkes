@@ -8,15 +8,18 @@ defmodule FawkesWeb.ErrorHelpers do
   @doc """
   Generates tag for inlined form input errors.
   """
+  # coveralls-ignore-start
   def error_tag(form, field) do
     Enum.map(Keyword.get_values(form.errors, field), fn error ->
       content_tag(:span, translate_error(error), class: "help-block")
     end)
   end
+  # coveralls-ignore-stop
 
   @doc """
   Translates an error message using gettext.
   """
+  # coveralls-ignore-start
   def translate_error({msg, opts}) do
     # When using gettext, we typically pass the strings we want
     # to translate as a static argument:
@@ -41,4 +44,5 @@ defmodule FawkesWeb.ErrorHelpers do
       Gettext.dgettext(FawkesWeb.Gettext, "errors", msg, opts)
     end
   end
+  # coveralls-ignore-stop
 end

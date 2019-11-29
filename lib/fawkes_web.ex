@@ -17,6 +17,7 @@ defmodule FawkesWeb do
   and import those modules here.
   """
 
+  # coveralls-ignore-start
   def controller do
     quote do
       use Phoenix.Controller, namespace: FawkesWeb
@@ -66,4 +67,5 @@ defmodule FawkesWeb do
   defmacro __using__(which) when is_atom(which) do
     apply(__MODULE__, which, [])
   end
+  # coveralls-ignore-stop
 end

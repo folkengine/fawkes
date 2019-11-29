@@ -9,9 +9,11 @@ defmodule FawkesWeb.Router do
     plug :put_secure_browser_headers
   end
 
+  # coveralls-ignore-start
   pipeline :api do
     plug :accepts, ["json"]
   end
+  # coveralls-ignore-stop
 
   scope "/", FawkesWeb do
     pipe_through :browser
